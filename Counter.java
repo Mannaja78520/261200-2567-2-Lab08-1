@@ -11,7 +11,7 @@ public class Counter implements Runnable {
     }
 
     public void run() {
-      for (int i = 0; i <= 50; i++) {
+      for (int i = 1; i <= 50; i++) {
         System.out.println("thread #" + threadNumber + ": " + i);
         try {
           Thread.sleep(new Random().nextInt(maxTime - minTime + 1) + minTime);
